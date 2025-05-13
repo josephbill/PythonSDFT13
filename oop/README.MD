@@ -46,3 +46,18 @@ essential features
 3. Inheritance : Creating new blueprints (class) from existing ones 
 4. Polymorphism : using a single interface for diff. data types 
 
+
+### ACCESS MODIFIERS 
+control the visibility and accessibility of class members (attributes and methods)
+Python doesn't enforce strict access like some other languages e.g java and c++ , it uses naming conventions to suggest intended access.
+
+1. Public members  = everything is public unless explicilty made private or protected 
+
+2. Protected members  = intended for internal use or subclasses(inheritance)
+_NameAttribute
+_Nameoffunction
+
+3. Private members = python internally changes the name of the attribute to _CLASSNAME__ATTRIBUTE , access is blocked from outside on 
+use of the original attribute name 
+__NameAttribute 
+__NameofFunction
