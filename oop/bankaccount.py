@@ -5,6 +5,7 @@ CLASS : BLUEPRINTS -> MEANT TO CREATE OBJECTS : instansiated
 ABC : this makes a class abstract/interface i.e. means it will define methods 
 , methods must be implemented in any class that will now inherit the bankaccount
 
+SSOT : data is stored and modified in one place
 
 '''
 class BankAccount(ABC):
@@ -30,6 +31,15 @@ class BankAccount(ABC):
     def get_balance(self):
         return self._balance
     
+    @property
+    def account_number(self):
+        return self._account_number
+    
+    @account_number.setter
+    def account_number(self, account_number):
+        self.account_number  = account_number
+    
+    
     def add_owner(self,customer):
         if customer not in self.owners:
             self.owners.append(customer)
@@ -42,7 +52,7 @@ class BankAccount(ABC):
 class Customer:
     def __init__(self, name):
         self.name = name 
-        self.accounts = []
+        self.accounts = []  # association with BankAccount
         
     def add_account(self, account: BankAccount):
         if account not in self.accounts:

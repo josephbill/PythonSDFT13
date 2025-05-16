@@ -59,5 +59,25 @@ _Nameoffunction
 
 3. Private members = python internally changes the name of the attribute to _CLASSNAME__ATTRIBUTE , access is blocked from outside on 
 use of the original attribute name 
+Used internally 
 __NameAttribute 
 __NameofFunction
+
+
+### BANKING ACCOUNT SYSTEM : - create accounts , check accounts , user management
+- Bank 
+- Customer (user)
+- Bank Account - creation of the account - deposits 
+- Checking Account - withdrawals , checking account types
+- Savings Account -  add_interest as per savings 
+
+
+### ASSOCIATION Relationship
+- a relationship where one object knows about another - it 'uses-a' relationshop : the objects
+can exist independently 
+
+### AGGREGATION Relationship
+- special type of association where one object contains or is composed of others , but the contained object can still exist independently : has a 
+
+### COMPOSITION Relationship
+- where one object contains or is composed of others, the contained object cannot exist without the container 
